@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <script>
 /* set language before first paint (no flash) */
-(function(){try{var q=/[?&]lang=(ar|en)/.exec(location.search);var l=(q&&q[1])||localStorage.getItem('as_lang_v1')||'ar';if(l==='en'){document.documentElement.lang='en';document.documentElement.dir='ltr';}}catch(e){}})();
+(function(){try{var q=/[?&]lang=(ar|en)/.exec(location.search);var l=(q&&q[1])||localStorage.getItem('as_lang_v1')||'en';if(l==='ar'){document.documentElement.lang='ar';document.documentElement.dir='rtl';}else{document.documentElement.lang='en';document.documentElement.dir='ltr';}}catch(e){}})();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>أحمد عبد الله أحمد صادق | رئيس قسم العقود والعطاءات والتسعير | PMP® PMI-RMP® PMI-PMO-CP®</title>
+<title>Ahmed Abdullah Ahmed Sadek | Head of Tender & Pricing | PMP® PMI-RMP® PMI-PMO-CP®</title>
 <meta name="description" content="أحمد عبد الله أحمد صادق: رئيس قسم العقود والعطاءات والتسعير، مدير أول معتمد لمكاتب إدارة المشاريع (PMO)، ومستشار الإدارة التنفيذية. PMP® وPMI-RMP® وPMI-PMO-CP®. الرياض، المملكة العربية السعودية.">
 <meta name="author" content="Ahmed Abdullah Ahmed Sadek">
 <meta name="theme-color" content="#13211C">
@@ -549,7 +549,7 @@ a.qc:hover{border-color:var(--brass);background:rgba(198,163,92,.08)}
       <a href="#contact"><span class="t-ar" lang="ar">التواصل</span><span class="t-en" lang="en">Contact</span></a>
     </nav>
     <div class="hdr-end">
-      <button type="button" class="lang-btn" id="langBtn" aria-label="Switch language / تبديل اللغة"><i class="fa-solid fa-globe" aria-hidden="true"></i><span id="langLabel">English</span></button>
+      <button type="button" class="lang-btn" id="langBtn" aria-label="Switch language / تبديل اللغة"><i class="fa-solid fa-globe" aria-hidden="true"></i><span id="langLabel">العربية</span></button>
       <a class="btn btn-brass btn-sm dl-nav" href="ahmed sadek resume.pdf" download="Ahmed_Sadek_CV.pdf"><i class="fa-solid fa-download" aria-hidden="true"></i><span><span class="t-ar" lang="ar">تحميل السيرة الذاتية (PDF)</span><span class="t-en" lang="en">Download CV (PDF)</span></span></a>
       <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="mnav" data-i18n-attr="aria-label" aria-label="القائمة" data-ar-aria-label="القائمة" data-en-aria-label="Menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
     </div>
@@ -988,8 +988,8 @@ a.qc:hover{border-color:var(--brass);background:rgba(198,163,92,.08)}
   });
   (function initLang() {
     var q = /[?&]lang=(ar|en)/.exec(window.location.search);
-    var l = (q && q[1]) || sGet(LANG_KEY) || 'ar';
-    applyLang(l === 'en' ? 'en' : 'ar', false);
+    var l = (q && q[1]) || sGet(LANG_KEY) || 'en';
+    applyLang(l === 'ar' ? 'ar' : 'en', false);
   })();
 
   /* ---------- header, mobile menu, scroll-spy ---------- */
